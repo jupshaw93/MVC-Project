@@ -1,0 +1,12 @@
+﻿@using MVC_Project.Controllers
+@model IEnumerable<MVC_Project.Models.Student>
+
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>List</h2>
+@foreach(var student in Model) { <th>@student.FirstName</th> }
+
